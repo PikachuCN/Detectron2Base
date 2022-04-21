@@ -6,5 +6,7 @@ RUN apt update
 RUN apt install libgl1-mesa-glx -y
 # 安装detectron2 组件
 RUN pip install opencv-contrib-python
+RUN pip install wheel
+RUN pip install pycocotools
 RUN pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.10/index.html --trusted-host dl.fbaipublicfiles.com
 RUN pip install uvicorn fastapi python-multipart
