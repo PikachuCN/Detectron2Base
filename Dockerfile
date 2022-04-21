@@ -10,4 +10,4 @@ RUN pip install wheel
 RUN pip install pycocotools
 RUN pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.10/index.html --trusted-host dl.fbaipublicfiles.com
 RUN pip install uvicorn fastapi python-multipart
-RUN apt uninstall gcc -y
+RUN apt remove gcc -y
